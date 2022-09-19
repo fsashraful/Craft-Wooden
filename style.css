@@ -1,0 +1,321 @@
+/* ===== Header Are start ===== */
+header{
+        background: url(https://i.ibb.co/2qY6DLd/ia-200000019.jpg) no-repeat ;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        z-index: 1;
+}
+
+header::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.5;
+    z-index: -1;
+    
+}
+
+.logo a img{
+    width: 200px;
+    margin-top: 2px;
+}
+
+.main-menu{
+    background: black;
+    opacity: 0.8;
+   
+}
+.menu ul {
+	text-align: right;
+	list-style: none;
+	margin-bottom: 0;
+    
+    
+}
+.menu ul li{
+    display: inline-block;
+    position: relative;
+    
+}
+.menu ul li a {
+	display: in;
+	text-decoration: none;
+	padding: 0 10px;
+	color: white;
+	line-height: 35px;
+    transition: .5s;
+    
+}
+
+/* Hover Area  */
+
+.menu ul li a::before {
+	content: "";
+	position: absolute;
+	top: 42px;
+	left: 0;
+	width: 100%;
+	height: 6%;
+	background: #c69453;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    transform: scaleX(0);
+}
+
+.menu ul li a:hover{
+    color: #c69453;
+}
+.menu ul li a:hover::before{
+    visibility: visible;
+    opacity: 1;
+    transform: scaleX(1);
+   
+}
+.menu ul li:first-child a{
+    color: #c69453;
+}
+
+/* Hover are end  */
+
+/* Drop Area start  */
+.menu ul li{
+    position: relative;
+}
+.menu ul li ul {
+	position: absolute;
+	top: 123%;
+	left: 0;
+	width: 170px;
+    height: auto;
+	background: white;
+	text-align: center;
+	padding-left: 0;
+	visibility: hidden;
+	opacity: 0;
+    transition: 0.5s;
+    transform: scaleY(0);
+}
+.menu ul li ul li{
+    display: block;
+}
+.menu ul li ul li a{
+    color: black;
+    padding: 10px 0;
+    display: block;
+}
+
+.menu ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+    transform-origin: center top;
+}
+
+.menu ul li ul li a:hover::before{
+    visibility: hidden;
+    opacity: 0;
+    transform: scaleX(0);
+}
+
+.menu ul li ul li a:hover{
+    background: #dddd;
+}
+
+
+
+/* Drop Area End  */
+
+/* Banner Area Start*/
+.banner{
+    color: white;
+    padding: 180px 0;
+}
+.banner-c h1 {
+	font-size: 55px;
+	font-weight: 700;
+	padding-bottom: 15px;
+}
+.banner-c h2 {
+	font-size: 25px;
+	font-weight: 600;
+	padding-bottom: 14px;
+    position: relative;
+}
+
+.banner-c h2::before {
+	content: "";
+	position: absolute;
+	width: 5%;
+	height: 4%;
+	top: 17px;
+	left: 335px;
+	background: white;
+}
+.banner-c a {
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	background: #c69453;
+	padding: 8px 20px;
+	border-radius: 20px;
+    transition: .5s;
+}
+
+.banner-c h2::after {
+	content: "";
+	position: absolute;
+	width: 5%;
+	height: 4%;
+	top: 17px;
+	right: 335px;
+	background: white;
+}
+
+.banner-c a:hover{
+    color: #c69453;
+    background: white;
+}
+/* Banner Area End */
+/* ===== Header Are End ===== */
+main{
+    background-color: #f8f8f8;
+}
+/* ===== Main Area start ===== */
+
+/* ===== Service Area Start ===== */
+.service{
+    padding-top: 60px;
+    
+}
+.service-1 {
+	text-align: center;
+	background: white;
+	padding: top;
+	box-sizing: border-box;
+    padding: 20px 0;
+    transition: .5s;
+    
+}
+
+.service-1 h4 {
+	font-size: 20px;
+	padding: 10px 0;
+	font-weight: 500;
+}
+
+.service-1 a {
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	background: #c69453;
+	padding: 7px 15px;
+	border-radius: 10px;
+	transition: .5s;
+}
+
+/* Service hover Part start  */
+
+/* ---------- s-hover Start ----------  */
+.s-hover:hover{
+    background: #dddd;
+    cursor: pointer;
+}
+.s-hover:hover img{
+    transform: rotateY(360deg); 
+    transition: .5s;
+}
+
+.s-hover:hover a{
+    background: white;
+    color: #c69453;
+}
+
+.s-hover a:hover{
+    background: black;
+    color: white;
+    transform: translateY(5px);
+}
+
+/* ---------- s-hover Start ----------  */
+
+/* Service hover Part End */
+/* ===== Service Area End ===== */
+
+/* ==== About Ared Start ===== */
+.about-section{
+    padding: 100px 0;
+}
+
+.about-content h2 {
+	font-size: 40px;
+	font-weight: 700;
+	padding-bottom: 5px;
+}
+
+.about-content h2 span{
+    color: #c69453;
+}
+
+.about-content a {
+	display: inline-block;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	background: #000000;
+	padding: 7px 15px;
+	transition: .5s;
+}
+
+.about-content a:hover{
+    background: #c69453;
+}
+
+/* ==== About Ared End ===== */
+
+/* ===== Quote Are Start ==== */
+.quote-area{
+    background: url(https://i.ibb.co/Bng7w7z/ia-200000022.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    padding: 15px 0;
+}
+
+
+.qoute-text h3{
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.btn-bg{
+    background: #c69453;
+    color: white;
+}
+
+/* ===== Quote Are End ==== */
+/* ===== Main Area End ===== */
+
+/* ===== Footer Menu start =====  */
+footer{
+    background: #6d6c6d;
+    color: white;
+    padding: 10px 0;
+}
+
+.pd p {
+	margin-bottom: 0;
+	line-height: 40px;
+}
+.f-icon span{
+    padding: 10px 10px;
+    display: inline-block;
+}
+
+
+/* ===== Footer Menu End=====  */
+
